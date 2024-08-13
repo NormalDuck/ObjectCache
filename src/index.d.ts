@@ -1,8 +1,8 @@
 declare class ObjectCache<T extends BasePart> {
-    constructor(Template: T, CacheSize: number | void, CachesContainer: Instance | void )
+    constructor(Template: T, CacheSize?: number , CachesContainer?: Folder )
     Destroy(): void
     ReturnPart(Part: T): void
-    GetPart(PartCFrame: CFrame | undefined): T
+    GetPart(PartCFrame?: CFrame): T
 }
 
 export = ObjectCache
