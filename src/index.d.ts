@@ -1,4 +1,4 @@
-declare class ObjectCache<T extends BasePart> {
+declare class ObjectCache<T extends BasePart | Model> {
     constructor(Template: T, CacheSize?: number , CachesContainer?: Folder )
     Destroy(): void
     ReturnPart(Part: T): void
