@@ -3,6 +3,9 @@ declare class ObjectCache<T extends BasePart> {
     Destroy(): void
     ReturnPart(Part: T): void
     GetPart(PartCFrame?: CFrame): T
+    ExpandCache(Amount: number): void
+    SetExpandAmount(Amount: number): void
+    IsInUse(Object: T): boolean
 }
 
 export = ObjectCache
